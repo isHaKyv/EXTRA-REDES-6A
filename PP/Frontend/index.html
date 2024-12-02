@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dashboard de Productos</h1>
+
+    <div id="login">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button onclick="login()">Iniciar Sesión</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Productos</h2>
+        <div id="products"></div>
+
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Nombre del producto" required>
+            <input type="number" id="price" placeholder="Precio" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
